@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onkeydown="handleKeyPress(event)">
+  <button id="toggleBtn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+
+  <div class="container">
+    <h2>Login / Register</h2>
+
+    <input type="text" id="username" name="usernameField" placeholder="Username" />
+    <input type="password" id="password" name="passwordField" placeholder="Password" />
+
+    <div class="buttons">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
